@@ -7,7 +7,7 @@ function Header() {
         <div className='flex items-center space-x-5'>
 
             <Link href='/'>
-                <img className='w-20 object-contain cursor-pointer' src="https://sarahsmriga.com/wp-content/uploads/2018/09/Genevieve-Wachutka-Classes-Illustrations_Astral-Projection.png" alt="" />
+                <img className='w-20 object-contain cursor-pointer' src="https://www.pngall.com/wp-content/uploads/4/Freedom-PNG-Free-Download.png" alt="" />
             </Link> 
             <div className='hidden md:inline-flex items-center space-x-5'>
                 <h3>About</h3>

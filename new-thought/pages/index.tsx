@@ -26,7 +26,7 @@ export default function Home({posts}: Props) {
         <div className='px-10 space-y-5'>
           <h1 className='text-6xl  max-w-xl font-serif'>
             <span className='underline decoration-black decoration-4'>
-              Developer Blog 
+              New Thought Collaborative 
             </span>{' '}
             is a place to connect, learn, and share with the community 
           </h1>
@@ -36,7 +36,7 @@ export default function Home({posts}: Props) {
         </div>
         <img 
         className='hidden md:inline-flex h-32 lg:h-64 ' 
-        src="https://sarahsmriga.com/wp-content/uploads/2018/09/Genevieve-Wachutka-Classes-Illustrations_Astral-Projection.png" 
+        src="https://www.pngall.com/wp-content/uploads/4/Freedom-PNG-Free-Download.png" 
         alt="" 
         />
       </div>

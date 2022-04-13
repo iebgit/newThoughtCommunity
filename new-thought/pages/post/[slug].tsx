@@ -47,17 +47,18 @@ return (<main>
         />
         <article className='max-w-3xl mx-auto p-5'>
             <h1 className='text-3xl mt-10 mb-3'>
-                {post.title}
+                <strong>{post.title}</strong>
             </h1>
             <h2 className='text-xl font-light text-grey-500'>
                 {post.description!}
                 </h2>
+                <br />
             <div className='flex items-center space-x-2'>
                 <img className='h-10 w-10 rounded-full' src={urlFor(post.author.image).url()} 
                 alt=''>
                 </img>
                 <p className='font-extralight text-sm'>
-                    Blog post by <span className='text-green-600'> {post.author.name} </span> - Published at 
+                    Blog post by <strong className='text-green-600'> {post.author.name} </strong> - Published at 
                     {' '}{new Date(post._createdAt).toLocaleString()}
                 </p>
             </div>
@@ -72,7 +73,7 @@ return (<main>
                         <h1 className='text-2xl font-bold my-5' {...props} />
                     ),
                     h2: (props: any) => (
-                        <h1 className='text-xl font-bold my-5' {...props} />
+                        <h2 className='text-xl font-bold my-5' {...props} />
                     ),
                     li: ({children}: any) => (
                         <li className='ml-4 list-disc'>{children}</li>
