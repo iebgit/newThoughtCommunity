@@ -50,12 +50,13 @@ export default function Home({posts}: Props) {
             <div className='flex justify-between p-5 bg-white'>
               <div >
                 <p className='text-lg font-bold'>{post.title}</p>
-                <p className='text-xs'>{post.description} by {post.author.name}</p>
-              </div>
+                <p className='text-xs'>{post.description} <strong className='text-green-600'>by  {post.author.name}</strong></p>
+              </div>{' '}
             <img className="h-12 w-12 rounded-full" 
             src={urlFor(post.author.image).url()!} 
             alt="" />
-            </div> </div>
+            </div> 
+            </div>
           </Link>
           )}
       </div>
