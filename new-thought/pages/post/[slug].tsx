@@ -40,13 +40,12 @@ function Post({post}: Props) {
    
 return (<main>
         <Header/>
-   
         <img 
         className='w-full h-40 object-cover' 
         src={urlFor(post.mainImage).url()!} 
         alt="" 
         />
-        <article className='max-w-3xl mx-auto p-5 font-serif'>
+        <article className='max-w-3xl mx-auto p-5'>
             <h1 className='text-3xl mt-10 mb-3'>
                 <strong>{post.title}</strong>
             </h1>
@@ -89,7 +88,7 @@ return (<main>
                 />
             </div>
         </article>
-        <hr className="max-w-lg my-5 mx-auto border border-yellow-500 font-serif" />
+        <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
         
         {submitted ? (
         <div className='flex flex-col p-10 my-10 bg-yellow-500 text-white max-w-2xl mx-auto'>
@@ -100,7 +99,7 @@ return (<main>
         </div>
         
         ) : (
-            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col p-5 max-w-2xl mx-auto mb-10 font-serif'>
+            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col p-5 max-w-2xl mx-auto mb-10'>
             <h3 className='text-sm text-yellow-500 '> Enjoy this article?</h3>
             <h4 className='text-3xl font-bold'>Leave a comment below!</h4>
             <hr className='py-3 mt-2' />
@@ -153,7 +152,7 @@ return (<main>
             />
         </form>
         )}
-        <div className='flex flex-col p-10 my-10 mx-auto max-w-2xl shadow-yellow-500 shadow space-y-2 font-serif'>
+        <div className='flex flex-col p-10 my-10 mx-auto max-w-2xl shadow-yellow-500 shadow space-y-2'>
             <h3 className='text-4xl'>Comments</h3>
             <hr className='pb-2' />
             {console.log(post)}
