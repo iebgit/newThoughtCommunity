@@ -38,7 +38,7 @@ function Post({post}: Props) {
         })
     };
    
-return (<main>
+return (<main className='font-serif'>
         <Header/>
         <img 
         className='w-full h-40 object-cover' 

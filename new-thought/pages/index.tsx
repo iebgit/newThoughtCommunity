@@ -15,16 +15,16 @@ interface Props {
 export default function Home({posts}: Props) {
   console.log(posts)
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto font-serif">
       <Head>
         <title>New Thought</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
-      <div className='flex justify-between items-center bg-yellow-400 border-y border-black py-10 font-serif'>
+      <div className='flex justify-between items-center bg-yellow-400 border-y border-black py-10'>
         <div className='px-10 space-y-5'>
-          <h1 className='text-6xl  max-w-xl'>
+          <h1 className='text-6xl  max-w-xl '>
             <span className='underline decoration-black decoration-4'>
               New Thought Collaborative 
             </span>{' '}
@@ -41,7 +41,7 @@ export default function Home({posts}: Props) {
         />
       </div>
       {/* Posts */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6 font-serif'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6'>
         {posts.map(post =>
           <Link key={post._id} href={`/post/${post.slug.current}`}>
             <div className='border rounded-lg group cursor-pointer overflow-hidden'>

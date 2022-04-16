@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <header className='flex justify-between p-5 max-w-7xl mx-auto'>
+    <header className='flex justify-between p-5 max-w-7xl mx-auto font-sarif'>
         <div className='flex items-center space-x-5'>
 
             <Link href='/'>
