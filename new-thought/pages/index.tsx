@@ -24,7 +24,7 @@ export default function Home({posts}: Props) {
       <Header />
       <div className='flex justify-between items-center bg-yellow-400 border-y border-black py-10'>
         <div className='px-10 space-y-5'>
-          <h1 className='text-6xl  max-w-xl '>
+          <h1 className='text-6xl  max-w-lg '>
             <span className='underline decoration-black decoration-4'>
               New Thought Collaborative 
             </span>{' '}
@@ -35,7 +35,7 @@ export default function Home({posts}: Props) {
           </h2>
         </div>
         <img 
-        className='hidden md:inline-flex h-32 lg:h-64 ' 
+        className='hidden md:inline-flex h-32 xl:h-64 px-10' 
         src="https://www.pngall.com/wp-content/uploads/4/Freedom-PNG-Free-Download.png" 
         alt="" 
         />
@@ -49,8 +49,8 @@ export default function Home({posts}: Props) {
       
             <div className='flex justify-between p-5 bg-white'>
               <div >
-                <p className='text-lg font-bold'>{post.title}</p>
-                <p className='text-xs'>{post.description} <strong className='text-green-600'>by  {post.author.name}</strong></p>
+                <p className='text-xl font-bold'>{post.title}</p>
+                <p className='text-sm'>{post.description} <strong className='text-green-600'>by  {post.author.name}</strong></p>
               </div>{' '}
             <img className="h-12 w-12 rounded-full" 
             src={urlFor(post.author.image).url()!} 

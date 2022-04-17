@@ -46,10 +46,10 @@ return (<main className='font-serif'>
         alt="" 
         />
         <article className='max-w-3xl mx-auto p-5'>
-            <h1 className='text-3xl mt-10 mb-3'>
+            <h1 className='text-4xl mt-10 mb-3 '>
                 <strong>{post.title}</strong>
             </h1>
-            <h2 className='text-xl font-light text-grey-500'>
+            <h2 className='text-2xl font-light text-yellow-500'>
                 {post.description!}
                 </h2>
                 <br />
@@ -58,7 +58,7 @@ return (<main className='font-serif'>
                 alt=''>
                 </img>
                 <p className='font-extralight text-sm'>
-                    Blog post by <strong className='text-green-600'> {post.author.name} </strong> - Published at 
+                    Blog post by <strong className='text-green-600 font-bold'> {post.author.name} </strong> - Published at 
                     {' '}{new Date(post._createdAt).toLocaleString()}
                 </p>
             </div>
@@ -69,17 +69,18 @@ return (<main className='font-serif'>
                 projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!}
                 content={post.body}
                 serializers={{
+                   
                     h1: (props: any) => (
-                        <h1 className='text-2xl font-bold my-5' {...props} />
+                        <h1 className='text-4xl font-bold my-5 text-green-600' {...props} />
                     ),
                     h2: (props: any) => (
-                        <h2 className='text-xl font-bold my-5' {...props} />
+                        <h2 className='text-2xl font-bold my-5 text-green-600' {...props} />
                     ),
                     li: ({children}: any) => (
                         <li className='ml-4 list-disc'>{children}</li>
                     ),
                     link: ({href, children}: any) => (
-                        <a href={href} className='text-blue-500 hover:underline'>
+                        <a href={href} className='text-blue-500 hover:underline hover:text-blue-600'>
                             {children}
                         </a>
                     ),
@@ -101,7 +102,7 @@ return (<main className='font-serif'>
         ) : (
             <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col p-5 max-w-2xl mx-auto mb-10'>
             <h3 className='text-sm text-yellow-500 '> Enjoy this article?</h3>
-            <h4 className='text-3xl font-bold'>Leave a comment below!</h4>
+            <h4 className='text-2xl font-bold'>Leave a comment below!</h4>
             <hr className='py-3 mt-2' />
             
             <input
@@ -153,7 +154,7 @@ return (<main className='font-serif'>
         </form>
         )}
         <div className='flex flex-col p-10 my-10 mx-auto max-w-2xl shadow-yellow-500 shadow space-y-2'>
-            <h3 className='text-4xl'>Comments</h3>
+            <h3 className='text-2xl font-bold'>Comments</h3>
             <hr className='pb-2' />
             {console.log(post)}
             {post.comments.map((comment) => (
