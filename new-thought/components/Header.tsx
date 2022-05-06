@@ -7,12 +7,12 @@ function Header() {
         <div className='flex items-center space-x-5'>
 
             <Link href='/'>
-                <img className='w-20 object-contain cursor-pointer' src="https://www.pngall.com/wp-content/uploads/4/Freedom-PNG-Free-Download.png" alt="" />
+                <img className='w-20 object-contain cursor-pointer' src="https://www.pngall.com/wp-content/uploads/4/Freedom-PNG-Free-Download.png" alt="/" />
             </Link> 
             <div className='hidden md:inline-flex items-center space-x-5'>
                 <h3>About</h3>
                 <h3>Contact</h3>
-                <h3 className='text-white bg-green-600 px-4 py-1 rounded-full'
+                <h3 title='Follow on Twitter' onClick={()=>window.open('https://twitter.com/ibisengineering')} className='text-white cursor-pointer bg-green-600 px-4 py-1 rounded-full'
                 >Follow</h3>
             </div>
         </div>
